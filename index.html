@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khôi Nùn | Infor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <div class="profile-container">
+        <div class="card-inner" id="cardInner">
+
+            <div class="card-face card-front">
+                <div class="avatar-wrapper">
+                    <img src="Ichinose Honami..png" alt="Avatar">
+                    <div class="status-dot"></div>
+                </div>
+
+                <div class="info-section">
+                    <h1 class="user-name">TRẦN NGUYỄN ĐĂNG KHÔI</h1>
+                    <p class="nickname">Khôi Nùn︱NoNem</p>
+                    <div class="birth-year-box">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <span>Sinh năm: 2008</span>
+                    </div>
+                    <p class="user-bio">
+                        Xin chào, tui tên là Khôi, bạn có thể gọi tui là Khôi Nùn hoặc NoNem, tui sinh năm 2008 và tui ở
+                        Tây Ninh, bên dưới là thông tin về mạng xã hội của tui:
+                    </p>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/khoi.nun.2024" target="_blank" rel="noopener noreferrer"
+                        class="btn fb">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@khoinun2008?lang=vi-VN" target="_blank" rel="noopener noreferrer"
+                        class="btn tt">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://discord.gg/HyAvGrYxq5" target="_blank" rel="noopener noreferrer" class="btn ds">
+                        <i class="fa-brands fa-discord"></i>
+                    </a>
+                </div>
+
+                <button class="flip-trigger" onclick="flipCard()">
+                    Thông tin khác <i class="fa-solid fa-rotate"></i>
+                </button>
+            </div>
+
+            <div class="card-face card-back">
+                <h2 class="back-title">CHUYỂN TIỀN CHO TUI</h2>
+
+                <div class="qr-container">
+                    <img src="ngân hàng.jpg" alt="QR Banking" class="qr-code">
+                    <div class="qr-overlay"></div>
+                </div>
+
+                <div class="bank-info">
+                    <p class="bank-name">NGÂN HÀNG: <span>AGRIBAK</span></p>
+                    <p class="account-name">CHỦ TK: <span>TRAN NGUYEN DANG KHOI</span></p>
+                    <p class="account-number">STK: <span>5704205429140</span> <i class="fa-regular fa-copy"
+                            onclick="copySTK()"></i>
+                    </p>
+                </div>
+
+                <button class="flip-trigger back-btn" onclick="flipCard()">
+                    <i class="fa-solid fa-reply"></i> Quay lại
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <div id="copy-toast" class="copy-toast">
+        <div class="toast-content">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Đã sao chép STK Agribank của Khôi!</span>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+</body>
+
+</html>
